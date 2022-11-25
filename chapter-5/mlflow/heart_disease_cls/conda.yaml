@@ -1,0 +1,16 @@
+name: heart_disease_cls
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - requests
+  - pip:
+      - mlflow>=1.0
+      - scikit-learn
+      - numpy
+      - pandas
+      - boto3
+      - fsspec
+      - s3fs
+      - cloudpickle
+
