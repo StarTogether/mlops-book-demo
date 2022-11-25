@@ -1,0 +1,20 @@
+name: heart_disease_cls
+
+conda_env: conda.yaml
+
+entry_points:
+  download:
+    command: "python download.py"
+
+  feature:
+    parameters:
+      file_path: {type: str}
+    command: "python feature.py --file_path {file_path}"
+
+  train:
+    parameters:
+      data_path: {type: str}
+    command: "python train.py  --data_path {data_path}"
+
+  main:
+    command: 'python main.py'
